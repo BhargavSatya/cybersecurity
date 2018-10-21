@@ -32,8 +32,6 @@ ALLOWED_HOSTS = ['edu-cybersec.herokuapp.com','cybersec-edu.herokuapp.com', 'loc
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
-    'learn.apps.LearnConfig',
-    'practice.apps.PracticeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
