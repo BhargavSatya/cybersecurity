@@ -11,10 +11,15 @@
         <link rel='stylesheet' href='/static/learn/topics.css' />
         <script src='/static/learn/js/anal.js'></script>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+
+        <style>
+
+        </style>
     </head>
 
     <header>
-        <body style="background-image:url('https://3b6xlt3iddqmuq5vy2w0s5d3-wpengine.netdna-ssl.com/state-of-security/wp-content/uploads/sites/3/shutterstock_652064302-800x450.jpg');background-size:cover ">
+        <body style="background-size:cover;background-color: grey ">
 
                 
 <div class="effect2">
@@ -24,8 +29,8 @@
         
     <a href="/" id="headerhome" class="homelabel"><i class="fa fa-home" style="cursor: pointer"></i> <label style="cursor: pointer">Home</label></a>
     <a href="/learn" id="headerlearn" class="learnlabel"><i class="fa fa-book" style="cursor: pointer"></i> <label style="cursor: pointer">Learn</label></a>
-    <a href="/practice" id="headerpractice" class="problemslabel"><i class="fa fa-pencil" style="cursor: pointer"></i> <label style="cursor: pointer">Practice</label></a>
-    <a href="/useshell" id="headercontests" class="contestslabel"><i class="fa fa-terminal" style="cursor: pointer"></i> <label style="cursor: pointer">Shell</label></a>
+    <a href="/practice" target="blank" id="headerpractice" class="problemslabel"><i class="fa fa-pencil" style="cursor: pointer"></i> <label style="cursor: pointer">Practice</label></a>
+    <a href="/useshell"  target="blank" id="headercontests" class="contestslabel"><i class="fa fa-terminal" style="cursor: pointer"></i> <label style="cursor: pointer">Shell</label></a>
     <a href="/add_articles" id="headerrankings" class="rankingslabel"><i class="fa fa-plus" style="cursor: pointer"></i> <label style="cursor: pointer">Add Articles</label></a>
     {% if user.is_authenticated %}
     <a data-toggle="modal" class="loginbutton" href="/profile">Profile</a>
@@ -164,7 +169,7 @@
     <div class="topicscontainer">
 
         
-            <div class="effect3" id = "addNewTopic0">
+            <div class="effect3" id = "addNewTopic0" style="margin-left:8%;">
                 <a href="/reversing/{{r}}">
                     <img src="/static/learn/images/BlogImages/rev.jpeg" id="image1" alt="Image Not Found" class = "addTopicImage">
                     <div style="text-align: center; padding-top: 2%"><label class="textDisplay">Reversing</label></div>
@@ -222,14 +227,25 @@
                 if ("visible" == "hidden")
                     document.getElementById('addNewTopic4').style.opacity = 0.5;
             </script>
+
+        </br>
         
-            <div class="effect3" id = "addNewTopic5">
+            <div class="effect3" id = "addNewTopic5"  style="margin-left:30%;" >
                 <a href="/general/{{g}}">
                     <img src="/static/learn/images/BlogImages/default0.jpg" id="image6" alt="Image Not Found" class = "addTopicImage">
                     
                     <div style="text-align: center; padding-top: 2%"><label class="textDisplay">General Skills</label></div>
                 </a>
             </div>
+
+            <div class="effect3" id = "addNewTopic5">
+                <a href="/tools/{{t}}">
+                    <img src="/static/learn/images/BlogImages/tools.jpeg" id="image6" alt="Image Not Found" class = "addTopicImage">
+                    
+                    <div style="text-align: center; padding-top: 2%"><label class="textDisplay">Tools</label></div>
+                </a>
+            </div>
+
             <script type="text/javascript" language="javascript">
                 if ("visible" == "hidden")
                     document.getElementById('addNewTopic5').style.opacity = 0.5;
@@ -451,7 +467,8 @@
 
 </body>
 
-    </footer>
+
+
 </html>
 
 

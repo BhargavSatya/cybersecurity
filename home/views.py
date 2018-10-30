@@ -143,9 +143,10 @@ def shell(request):
         return HttpResponseRedirect('/login')
 
 def practice(request):
-    questions=question.objects.all()
-    print questions
-    return render(request,'practice/practice.html')
+    # questions=question.objects.all()
+    # print questions
+    # return render(request,'practice/practice.html')
+    return HttpResponseRedirect('http://127.0.0.1:4000')
 
 def learn(request):
     articles=article.objects.filter(articlecategory='reversing',approved=True)[:1].get()
@@ -160,7 +161,9 @@ def learn(request):
     bin_id = articles.articleid
     articles=article.objects.filter(articlecategory='general',approved=True)[:1].get()
     gen_id = articles.articleid
-    return render(request,"learn/learn.html",{'r':rev_id, 'f':for_id,'c':cry_id,'b':bin_id,'w':web_id,'g':gen_id})
+    articles=article.objects.filter(articlecategory='tools',approved=True)[:1].get()
+    tool_id = articles.articleid
+    return render(request,"learn/learn.html",{'r':rev_id, 'f':for_id,'c':cry_id,'b':bin_id,'w':web_id,'g':gen_id,'t':tool_id})
 
 def reversing(request,id):
     articles=article.objects.filter(articlecategory='reversing')
@@ -189,6 +192,11 @@ def binary(request,id):
 
 def general(request,id):
     articles=article.objects.filter(articlecategory='general')
+    art =article.objects.get(articleid=str(id))
+    return render(request,"learn/1.html",{'articles':articles, 'art':art})
+
+def tools(request,id):
+    articles=article.objects.filter(articlecategory='tools')
     art =article.objects.get(articleid=str(id))
     return render(request,"learn/1.html",{'articles':articles, 'art':art})
 
