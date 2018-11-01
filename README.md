@@ -1,5 +1,7 @@
 # Educational Software for Cyber Security
 # ISOE532C Project
+You can also find the project Hosted on https://www.cybersec.ml:8000
+
 
 Download the files of this Repository and extract the shells.zip
 ## Initial Configurations
@@ -53,5 +55,20 @@ Since we are giving the BASH Shell : It could be given by runnning on port 3000
 node websehell-server app.js -p 3000
 ```
 
+you can now check the website (Preferably Chrome Browser)
+at the url  "  http://localhost:8000 "
+## Usage Manual
+1. Signup by providing a password with length of minimum 8 characters.
+2. Login
+3. Add articles if logged in.
+4. If Participating in CTF. Please register as a Team. and then Login.
+5. If using shell (On clicking Shell),  use  (user ID : 'guest' , password : 'guest') .
 
+#### for Admin 
+go to  http://localhost:8000/admin
+        use password said to you. :)
+       
+###### Extra Info : 
+we have used the Amazon Web Services for Hosting.
 
+Thank You .
