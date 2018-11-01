@@ -1,6 +1,6 @@
 # Educational Software for Cyber Security
 # ISOE532C Project
-You can also find the project Hosted on https://www.cybersec.ml:8000
+You can also find the project Hosted on https://www.cybersec-edu.ml:8000
 
 
 Download the files of this Repository and extract the shells.zip
@@ -66,6 +66,7 @@ at the url  "  http://localhost:8000 "
 
 #### for Admin 
 go to  http://localhost:8000/admin
+        id:admin
         use password said to you. :)
        
 ###### Extra Info : 
