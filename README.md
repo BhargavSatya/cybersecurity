@@ -3,7 +3,7 @@
 You can also find the project Hosted on https://www.cybersec-edu.ml:8000
 
 
-Download the files of this Repository and extract the shells.zip
+Download the files of this Repository and extract the shells.zip. Contents of shells folder must be in the main directory.
 ## Initial Configurations
 The Project's backend is Python.
 We have used Python's frameworks (Django and Flash) .
@@ -62,7 +62,7 @@ at the url  "  http://localhost:8000 "
 2. Login
 3. Add articles if logged in.
 4. If Participating in CTF. Please register as a Team. and then Login.
-5. If using shell (On clicking Shell),  use  (user ID : 'guest' , password : 'guest') .
+5. If using shell (On clicking Shell),  use  (user ID : 'guest' , password : 'guest') .If it doesn't work use (user ID : 'foo' , password : 'bar') 
 
 #### for Admin 
 go to  http://localhost:8000/admin
