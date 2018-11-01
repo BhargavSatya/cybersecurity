@@ -9,10 +9,7 @@ The Project's backend is Python.
 We have used Python's frameworks (Django and Flash) .
 
 ### Installing Python 2.7
-``` sudo apt-get install python
-        
-```
-
+```sudo apt-get install python ```
 Virtual Envirement wraps all the dependencies and doesn't mess the main python framework versions.
 #### Virtual Env
 ```
